@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#tophead{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#tophead div{
+    color: white;
+}
+
+#tophead div i{
+    color: yellow;
+}
+
+
+/*====================== header code========  */
+
+#navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+
+}
+
+#navbar h1{
+    color: white;
+}
+
+
+#navbar nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+#navbar nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+#navbar nav ul li a:hover{
+    color: red;
+
+}
+
+/*=================== home=============  */
+
+#home{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+    background-image: url(./Images/hero-bg.jpg);
+    background-size: 140%;
+    display: flex;
+    align-items: center;
+
+   
+}
+
+#home div{
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-left: 15%;
+    /* line-height: 50px; */
+}
+
+#home div h1 span{
+    color: yellow;
+}
+
+#home div h1{
+    font-size: 50px;
+    color: white;
+}
+
+#home div p{
+    color: white;
+}
+
+#home div .btn1{
+
+    /* padding: 5px 25px; */
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+
+}
+
+#home div .btn1:hover{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+
+
+#About{
+    width: 100%;
+    height: 100vh;
+}
+
+#About .aboutdiv{
+ 
+/* display: flex;
+justify-content: center;
+flex-wrap: wrap; */
+display: grid;
+grid-template-columns:1fr 2fr 1fr;
+justify-content: center;
+gap: 10px;
+
+}
+
+
+#About .aboutdiv div{
+    /* width: 300px; */
+    height: 300px;
+    border: 1px solid black;
+}
+
+
+
+#scroll div{
+
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+
+}
+
+#scroll{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,300px);
+    overflow-x: scroll;
+    gap: 10px;
+    scrollbar-width: none;
+}
